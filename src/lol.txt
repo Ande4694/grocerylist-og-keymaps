@@ -1,0 +1,10 @@
+rice	25
+butter 	15
+milk 	10
+flour	12
+cheese	50
+wine	100
+beer	65
+nuts	45
+fish	85
+tomato	8
