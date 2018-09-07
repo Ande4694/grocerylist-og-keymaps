@@ -74,6 +74,9 @@ public class GroceryList {
                         addSelectItem(option);
                         break;
 
+                    case 99:
+                        GroceryItemOrder.check();
+
                     case 9:
                         addSelectItem(option);
                         break;

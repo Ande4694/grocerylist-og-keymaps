@@ -39,6 +39,12 @@ public class GroceryItemOrder {
         this.name = name;
     }
 
+    public static void check(){
+        for (int i = 0; i<10;i++) {
+            System.out.println("ANDERS ER DEN BEDSTE");
+        }
+    }
+
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
