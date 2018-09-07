@@ -8,7 +8,7 @@ public class Test {
         GroceryList list = new GroceryList();
         list.readlist();
         list.addItem();
-        list.showGrocList();
+
 
     }
 }
