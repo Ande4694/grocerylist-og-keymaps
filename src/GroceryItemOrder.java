@@ -15,7 +15,7 @@ public class GroceryItemOrder {
     public GroceryItemOrder(int price, String name) {
         this.price = price;
         this.name = name;
-        this.quantity = 1;
+        this.quantity ++;
     }
 
     public int getPrice() {
