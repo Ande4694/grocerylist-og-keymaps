@@ -6,7 +6,8 @@ public class Test {
     public static void main(String[] args)throws FileNotFoundException, NoSuchElementException, NullPointerException {
 
         GroceryList list = new GroceryList();
-        list.readlist();
+         /// ctrl b - naviger til source
+        /// ctrl tab - tilbage
         list.addItem();
 
 

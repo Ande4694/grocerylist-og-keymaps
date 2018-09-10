@@ -1,8 +1,7 @@
 public class GroceryItemOrder {
     private int price;
     private String name;
-    private int quantity = 0;
-    private int count;
+    private int quantity;
 
 
     @Override
@@ -16,7 +15,7 @@ public class GroceryItemOrder {
     public GroceryItemOrder(int price, String name) {
         this.price = price;
         this.name = name;
-        this.quantity++;
+        this.quantity = 1;
     }
 
     public int getPrice() {
@@ -47,5 +46,9 @@ public class GroceryItemOrder {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+        if (quantity<= 1){
+            System.out.println("quantity cannot be less than 1, since you tried to cheat im setting it to 50 for you.");
+        }
+        this.quantity = 50;
     }
 }
