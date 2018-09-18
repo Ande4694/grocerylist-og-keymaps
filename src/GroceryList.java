@@ -39,70 +39,25 @@ public class GroceryList {
             System.out.println("0: exit");
             while(run){
                 option = antiJarl();
-
-                switch (option){
-
-                    case 1:
-                        addSelectItem(option);
-                        break;
-
-                    case 2:
-                        addSelectItem(option);
-                        break;
-
-                    case 3:
-                        addSelectItem(option);
-                        break;
-
-                    case 4:
-                        addSelectItem(option);
-                        break;
-
-                    case 5:
-                        addSelectItem(option);
-                        break;
-
-                    case 6:
-                        addSelectItem(option);
-                        break;
-
-                    case 7:
-                        addSelectItem(option);
-                        break;
-
-                    case 8:
-                        addSelectItem(option);
-                        break;
-
-                    case 99:
-                        GroceryItemOrder.check();
-
-                    case 9:
-                        addSelectItem(option);
-                        break;
-
-                    case 10:
-                        addSelectItem(option);
-                        break;
-
-                    case 11:
-                        showGrocList();
-                        break;
-
-                    case 12:
-                        showGrocListPrice();
-                        break;
-
-                    default:
-                        System.out.println("You only have 10 options");
-                        break;
-
-                    case 0:
-                        System.out.println("exiting grocery list.");
-                        showGrocListPrice();
-                        showGrocList();
-                        run = false;
+                //////////////////undgå case - del kode op så det er lettere læsligt, max 10 linier per metode
+                if (option == 11){
+                    showGrocList();
                 }
+                else if (option == 12){
+                    showGrocListPrice();
+                } else if (option == 0){
+                    System.out.println("exiting grocery list.");
+                    showGrocListPrice();
+                    showGrocList();
+                    run = false;
+                }else if (option <0 && option >12){
+                    System.out.println("you only have 10 options");
+
+                } if (option >0 && option <11){
+                    addSelectItem(option);
+                }
+
+
             }
 
     }
