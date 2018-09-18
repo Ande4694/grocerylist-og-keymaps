@@ -30,20 +30,6 @@ public class GroceryItemOrder {
         return quantity;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public static void check(){
-        for (int i = 0; i<10;i++) {
-            System.out.println("ANDERS ER DEN BEDSTE");
-        }
-    }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
         if (quantity<= 1){
